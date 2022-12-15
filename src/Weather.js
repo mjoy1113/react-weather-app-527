@@ -11,6 +11,7 @@ export default function Weather() {
               type="serach"
               placeholder="enter a city..."
               className="form-control"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">
@@ -20,16 +21,22 @@ export default function Weather() {
       </form>
       <h1>New York</h1>
       <ul>
-        <li>Wednesday 7:00</li>
+        <li>Wednesday 8:00</li>
         <li>Mostly Cloudy</li>
       </ul>
-      <div className="row">
+      <div className="row mt-3">
         <div className="col-6">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-            alt="Mostly Cloudy"
-          ></img>
-          6°C
+          <div ClassName="clearfix">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              alt="Mostly Cloudy"
+              className="float-left"
+            ></img>
+            <div className="float-left">
+              <span className="temperature">6</span>
+              <span className="unit">°C</span>
+            </div>
+          </div>
         </div>
         <div className="col-6">
           <ul>
